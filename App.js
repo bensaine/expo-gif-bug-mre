@@ -7,11 +7,11 @@ export default function App() {
 
 	return (
 		<View style={styles.container}>
-      <Text style={styles.title}>Normal remote GIF</Text>
+			<Text style={styles.title}>Normal remote GIF</Text>
 			<Image autoplay={true} width={170} height={170} source={GIF_URL} />
-      <Text style={styles.title}>Same GIF at a smaller size (broken)</Text>
+			<Text style={styles.title}>Same GIF at a smaller size (broken)</Text>
 			<Image autoplay={true} width={150} height={150} source={GIF_URL} />
-      <Text style={styles.title}>Same GIF at a smaller size, local source (broken)</Text>
+			<Text style={styles.title}>Same GIF at a smaller size, local source (broken)</Text>
 			<Image autoplay={true} width={150} height={150} source={require("./assets/tenor.gif")} />
 		</View>
 	)
@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "center",
 	},
-  title: {
-    paddingTop: 20,
+	title: {
+		paddingTop: 20,
 		paddingBottom: 10,
 	},
 })
